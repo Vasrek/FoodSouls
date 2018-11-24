@@ -519,12 +519,134 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2, z: -8.92}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &662030061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 662030062}
+  - component: {fileID: 662030064}
+  - component: {fileID: 662030065}
+  - component: {fileID: 662030063}
+  m_Layer: 5
+  m_Name: RightArrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &662030062
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 662030061}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000196, y: 1.0000277, z: 1.0000196}
+  m_Children: []
+  m_Father: {fileID: 1107951181}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -80, y: -30}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &662030063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 662030061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 662030065}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1564773530}
+        m_MethodName: SwipeRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!222 &662030064
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 662030061}
+  m_CullTransparentMesh: 0
+--- !u!114 &662030065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 662030061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 29e41b76e55f8b248a34f305bfc773fa, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!1 &682270767
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,10 +975,10 @@ RectTransform:
   m_Father: {fileID: 853012867}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6096864}
+  m_AnchorMin: {x: 0, y: 0.6}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &872597595
 MonoBehaviour:
@@ -1060,13 +1182,15 @@ RectTransform:
   - {fileID: 1281591900}
   - {fileID: 1493099439}
   - {fileID: 682270770}
+  - {fileID: 1673756914}
+  - {fileID: 662030062}
   m_Father: {fileID: 853012867}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.6096864}
-  m_AnchoredPosition: {x: 0, y: 0.5}
-  m_SizeDelta: {x: 0, y: 199}
+  m_AnchorMax: {x: 1, y: 0.6}
+  m_AnchoredPosition: {x: 0, y: 1}
+  m_SizeDelta: {x: 0, y: 208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1107951182
 MonoBehaviour:
@@ -1492,232 +1616,119 @@ MonoBehaviour:
   PlusDotLarge: {fileID: 33728943}
   FoodDotSmall: {fileID: 1105597767}
   FoodDotLarge: {fileID: 462545668}
+  RightArrow: {fileID: 662030065}
+  LeftArrow: {fileID: 1673756911}
   foods:
-  - sprite: {fileID: 21300000, guid: f8c2b521ff26620439324b55da7f83c0, type: 3}
-    Calories: 13
+  - sprite: {fileID: 21300000, guid: 89e3a969cacb9014a9d0d29385d7cee5, type: 3}
+    Calories: 3
+    Argent: 3
+    Health: -5
+    desc: Croissant
+  - sprite: {fileID: 21300000, guid: 0cb295de54da7fd4f879be68f7e51b0e, type: 3}
+    Calories: 4
+    Argent: 4
+    Health: -7
+    desc: Cookie
+  - sprite: {fileID: 21300000, guid: 18bc523a019631e4fa45a903a224dc29, type: 3}
+    Calories: 5
+    Argent: 7
+    Health: -10
+    desc: Cupcake
+  - sprite: {fileID: 21300000, guid: 15137efbd8fba3546877bcffa2c2f5a1, type: 3}
+    Calories: 2
+    Argent: 3
+    Health: 5
+    desc: Tomate
+  - sprite: {fileID: 21300000, guid: a4086f4b0ad742a46b2876a09e6b4e57, type: 3}
+    Calories: 1
+    Argent: 2
+    Health: 10
+    desc: 
+  - sprite: {fileID: 21300000, guid: 11df7feb81fd1ce4493e96dff0ea47f0, type: 3}
+    Calories: 8
+    Argent: 10
+    Health: -15
+    desc: "Cr\xEApes"
+  - sprite: {fileID: 21300000, guid: f284be377306f7f44b4143a50c1abbd8, type: 3}
+    Calories: 15
+    Argent: 10
+    Health: -15
+    desc: Frites
+  - sprite: {fileID: 21300000, guid: 58687767e81e9ea4a89940848577bddc, type: 3}
+    Calories: 5
+    Argent: 6
+    Health: 8
+    desc: Brocoli
+  - sprite: {fileID: 21300000, guid: 2bf8aefb39b84ae4fb4b22c834e63171, type: 3}
+    Calories: 5
+    Argent: 15
+    Health: 5
+    desc: Sushi
+  - sprite: {fileID: 21300000, guid: a1d5e25372fdb4645955c7bcbcb4db7b, type: 3}
+    Calories: 7
+    Argent: 4
+    Health: 7
+    desc: "P\xEAche"
+  - sprite: {fileID: 21300000, guid: 31be1ee4a5bed28489db5300766ee6e8, type: 3}
+    Calories: 9
+    Argent: 4
+    Health: 12
+    desc: Concombre
+  - sprite: {fileID: 21300000, guid: 0df2491da1c37094cbb55cbdd3b7f5e7, type: 3}
+    Calories: 10
+    Argent: 8
+    Health: -10
+    desc: HotDog
+  - sprite: {fileID: 21300000, guid: 3644857f5ca9fc94a81607498cad4350, type: 3}
+    Calories: 20
+    Argent: 15
+    Health: -15
+    desc: Hamburger
+  - sprite: {fileID: 21300000, guid: da1e6ff324c4d7444abe71ea58cf1200, type: 3}
+    Calories: 12
     Argent: 5
     Health: 15
-    desc: Avocat
-  - sprite: {fileID: 21300000, guid: 9fc87d9ff481d094faba8aa828e3f7d9, type: 3}
-    Calories: 5
-    Argent: 13
-    Health: 12
-    desc: Banane
-  - sprite: {fileID: 21300000, guid: 83757574dca9196428e1b1a810636c80, type: 3}
+    desc: Salade verte
+  - sprite: {fileID: 21300000, guid: 7ad06938f89b28546b7b6c86fcb13336, type: 3}
     Calories: 15
-    Argent: 15
-    Health: 14
-    desc: Brocoli
-  - sprite: {fileID: 21300000, guid: 01dff31f2e7d8dd4db099b4a4b06c491, type: 3}
-    Calories: 10
-    Argent: 6
-    Health: 10
-    desc: Carrote
-  - sprite: {fileID: 21300000, guid: ff282c158ebe56641a3cad5a5598ae43, type: 3}
-    Calories: 6
-    Argent: 13
-    Health: 14
-    desc: Cerises
-  - sprite: {fileID: 21300000, guid: 0eaa1f727c1b6154887355ada068c4ff, type: 3}
-    Calories: 12
-    Argent: 13
-    Health: 14
-    desc: Noix de coco
-  - sprite: {fileID: 21300000, guid: 70152703ca0eb104ca31cd82d2a06a5d, type: 3}
-    Calories: 5
-    Argent: 5
-    Health: 13
-    desc: Concombre
-  - sprite: {fileID: 21300000, guid: b68ce83e7336ab141861a3e095189907, type: 3}
-    Calories: 6
-    Argent: 9
-    Health: 5
-    desc: Mais
-  - sprite: {fileID: 21300000, guid: 7e85c3442edfd514c9a24c5273673977, type: 3}
-    Calories: 13
-    Argent: 6
-    Health: 11
-    desc: Raisins
-  - sprite: {fileID: 21300000, guid: 7036346ecdb03fc44891229dc0a714ef, type: 3}
-    Calories: 5
-    Argent: 9
-    Health: 9
-    desc: Pomme
-  - sprite: {fileID: 21300000, guid: 41fef87aee434204fb84e5302452d636, type: 3}
-    Calories: 17
-    Argent: 19
-    Health: -16
-    desc: Pancake
-  - sprite: {fileID: 21300000, guid: e17e28aa5543b9e44bdf364d3fb830f1, type: 3}
-    Calories: 14
-    Argent: 20
-    Health: -22
-    desc: Jamboneau
-  - sprite: {fileID: 21300000, guid: 3934ca5a4c470cf4aa6b717c19b287bc, type: 3}
-    Calories: 24
     Argent: 10
-    Health: -13
-    desc: Chicken
-  - sprite: {fileID: 21300000, guid: 1e0ae08730a78e3429a80a17be3801b8, type: 3}
-    Calories: 24
-    Argent: 25
-    Health: -25
-    desc: Steak
-  - sprite: {fileID: 21300000, guid: 7e71a517fb6328848ba6a144a0fd74e5, type: 3}
-    Calories: 24
-    Argent: 26
-    Health: -30
-    desc: Bacon
-  - sprite: {fileID: 21300000, guid: f6da6c13d95cdef419c2c43ff6ef2d53, type: 3}
-    Calories: 27
-    Argent: 12
-    Health: -25
-    desc: Hamburger
-  - sprite: {fileID: 21300000, guid: d8e89b9266ce3cb4788cacd6d4a437a4, type: 3}
-    Calories: 16
-    Argent: 25
-    Health: -11
-    desc: Frites
-  - sprite: {fileID: 21300000, guid: cefceddff6a3775488b59730f18f0fc5, type: 3}
-    Calories: 18
-    Argent: 10
-    Health: -21
-    desc: Pizza
-  - sprite: {fileID: 21300000, guid: 78d22a80378b9114b9e40bd902b4f7c8, type: 3}
-    Calories: 22
-    Argent: 20
-    Health: -25
-    desc: Hot-Dog
-  - sprite: {fileID: 21300000, guid: a1c31bfbe8a346b48bda1889966f3b51, type: 3}
-    Calories: 20
-    Argent: 18
-    Health: -18
-    desc: Sandwhich
-  - sprite: {fileID: 21300000, guid: 83a5829d749a3f44f984770c6b3a9bd4, type: 3}
-    Calories: 11
-    Argent: 26
-    Health: -20
-    desc: Tacos
-  - sprite: {fileID: 21300000, guid: e35c2e88ab1e6c840a547798ab38cc62, type: 3}
-    Calories: 30
-    Argent: 12
-    Health: -17
-    desc: Burrito
-  - sprite: {fileID: 21300000, guid: 2619624ca81b3b9449e59f3ca16c0275, type: 3}
-    Calories: 14
-    Argent: 13
-    Health: -26
-    desc: Kebab
-  - sprite: {fileID: 21300000, guid: af1450b3ba82e764894c7498f5a4c781, type: 3}
-    Calories: 23
-    Argent: 16
-    Health: 23
-    desc: Omelet
-  - sprite: {fileID: 21300000, guid: 235a7fe48bcb44545be4bf2f3a19bfb9, type: 3}
-    Calories: 17
-    Argent: 22
-    Health: 16
-    desc: Paela
-  - sprite: {fileID: 21300000, guid: 6683b54975962d948b71a0985564ee2a, type: 3}
-    Calories: 22
-    Argent: 17
-    Health: 18
-    desc: Pot au feu
-  - sprite: {fileID: 21300000, guid: c075a1b6f719ecc48bed106b5eefd2df, type: 3}
-    Calories: 17
-    Argent: 17
-    Health: 19
-    desc: "Soupe \xE0 la tomate"
-  - sprite: {fileID: 21300000, guid: ee766d8d729a00643af13d5d5cf943bc, type: 3}
-    Calories: 20
-    Argent: 16
-    Health: 18
-    desc: Salade
-  - sprite: {fileID: 21300000, guid: 36c0c79e15cbbca4faccff66a9c2026b, type: 3}
-    Calories: 15
-    Argent: 19
-    Health: 24
-    desc: Sushi
-  - sprite: {fileID: 21300000, guid: 845243a7eae03a84d9b4b45bbdf58543, type: 3}
-    Calories: 15
-    Argent: 18
-    Health: 17
-    desc: Onigiri
-  - sprite: {fileID: 21300000, guid: 84ede43eeb0611b43acc7f7332eb9e49, type: 3}
-    Calories: 24
-    Argent: 21
-    Health: 17
-    desc: Curry Rice
-  - sprite: {fileID: 21300000, guid: b116dd66384c6b04a88f65908a427440, type: 3}
-    Calories: 22
-    Argent: 25
-    Health: 24
-    desc: Noodles
-  - sprite: {fileID: 21300000, guid: 90e3085ee8ac3914b9775d62e33074a9, type: 3}
-    Calories: 23
-    Argent: 25
     Health: 20
-    desc: Spaghetti
-  - sprite: {fileID: 21300000, guid: 906880ad9a3f01641afcea66fb0e7de8, type: 3}
-    Calories: 24
-    Argent: 17
-    Health: 17
-    desc: Yakitori
-  - sprite: {fileID: 21300000, guid: d4940fe7ab548c643951f8eb4c6fcf5e, type: 3}
-    Calories: 23
-    Argent: 17
-    Health: 16
-    desc: Crevettes
-  - sprite: {fileID: 21300000, guid: 1319f33cd5d2c4c4b89ce63d9c8a5890, type: 3}
-    Calories: 24
-    Argent: 19
-    Health: -17
-    desc: Ravioli
-  - sprite: {fileID: 21300000, guid: 025d60675a1c9a349873bbc8d5ee79a0, type: 3}
-    Calories: 7
-    Argent: 6
-    Health: 13
-    desc: Kiwi
-  - sprite: {fileID: 21300000, guid: 6c7cefffecfa74a4e855c5f0b8fa25c0, type: 3}
-    Calories: 8
-    Argent: 10
-    Health: 8
-    desc: Melon
-  - sprite: {fileID: 21300000, guid: b2823bc8f575c71448b4a01dc96daaf0, type: 3}
-    Calories: 5
-    Argent: 14
-    Health: 8
-    desc: Peche
-  - sprite: {fileID: 21300000, guid: 9d00e20737df516498b3c4c1ee1b0a34, type: 3}
-    Calories: 9
-    Argent: 15
-    Health: 9
-    desc: Annanas
-  - sprite: {fileID: 21300000, guid: 7eefeacfdb37965429d2286db5599cb4, type: 3}
-    Calories: 11
-    Argent: 11
-    Health: 12
-    desc: Patate
-  - sprite: {fileID: 21300000, guid: 0d71f823d26a3bf469ce6b59acb22ca6, type: 3}
-    Calories: 7
-    Argent: 5
+    desc: "Salade compos\xE9e"
+  - sprite: {fileID: 21300000, guid: d9a0c8634b9f57447956160c9197a982, type: 3}
+    Calories: 0
+    Argent: -10
+    Health: 0
+    desc: Billet au sol
+  - sprite: {fileID: 21300000, guid: 733705c2a894030488b5c059d8c974e2, type: 3}
+    Calories: 0
+    Argent: 0
+    Health: 30
+    desc: Docteur
+  - sprite: {fileID: 21300000, guid: 9c6d308534146a64ba635457d3966d92, type: 3}
+    Calories: 15
+    Argent: -10
     Health: 10
-    desc: Fraise
-  - sprite: {fileID: 21300000, guid: 3643ffed780d1c64ea5293d9bbfe675c, type: 3}
-    Calories: 5
-    Argent: 13
-    Health: 8
-    desc: Mandarine
-  - sprite: {fileID: 21300000, guid: 077e885a9fe15c547b3cf3efda6572b9, type: 3}
-    Calories: 8
-    Argent: 7
-    Health: 14
-    desc: Tomate
-  - sprite: {fileID: 21300000, guid: 26c2921d96c8661469a501427102ec9b, type: 3}
-    Calories: 6
-    Argent: 14
-    Health: 5
-    desc: Pasteque
+    desc: Repas d'equipe
+  - sprite: {fileID: 21300000, guid: 47e6676a95528c5439666b9ca9c9f3a8, type: 3}
+    Calories: 7
+    Argent: 20
+    Health: -15
+    desc: Afterwork
+  - sprite: {fileID: 21300000, guid: cef01ebbfb1ba584b8514cdea2e67cab, type: 3}
+    Calories: -10
+    Argent: 0
+    Health: -10
+    desc: Indigestion
+  - sprite: {fileID: 21300000, guid: 41dab7e3be83d844e915db26a1c8cd7e, type: 3}
+    Calories: 0
+    Argent: -30
+    Health: 0
+    desc: Jour de paie
+  - sprite: {fileID: 21300000, guid: 799d274aef8b0214bb48835c326d6137, type: 3}
+    Calories: 10
+    Argent: -10
+    Health: 10
+    desc: Joker
 --- !u!4 &1564773531
 Transform:
   m_ObjectHideFlags: 0
@@ -1731,6 +1742,128 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1673756910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1673756914}
+  - component: {fileID: 1673756913}
+  - component: {fileID: 1673756911}
+  - component: {fileID: 1673756912}
+  m_Layer: 5
+  m_Name: LeftArrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1673756911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673756910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ca6211059ebe9434391719ec7a07eab8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &1673756912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673756910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1673756911}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1564773530}
+        m_MethodName: SwipeLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!222 &1673756913
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673756910}
+  m_CullTransparentMesh: 0
+--- !u!224 &1673756914
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673756910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1107951181}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 80, y: -30}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1715964990
 GameObject:
   m_ObjectHideFlags: 0
