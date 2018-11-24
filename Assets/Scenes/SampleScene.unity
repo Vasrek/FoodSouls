@@ -1486,6 +1486,12 @@ MonoBehaviour:
   DollarBar: {fileID: 1078243545}
   PlusBar: {fileID: 1329001297}
   FoodBar: {fileID: 1265262217}
+  DollarDotSmall: {fileID: 522124035}
+  DollarDotLarge: {fileID: 1789692165}
+  PlusDotSmall: {fileID: 1715964993}
+  PlusDotLarge: {fileID: 33728943}
+  FoodDotSmall: {fileID: 1105597767}
+  FoodDotLarge: {fileID: 462545668}
   foods:
   - sprite: {fileID: 21300000, guid: f8c2b521ff26620439324b55da7f83c0, type: 3}
     Calories: 13

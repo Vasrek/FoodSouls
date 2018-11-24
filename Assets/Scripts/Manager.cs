@@ -20,6 +20,8 @@ public class Manager : MonoBehaviour
     public Image FoodImage;
     public Text desc, day;
     public Image DollarBar, PlusBar, FoodBar;
+    public Image DollarDotSmall, DollarDotLarge, PlusDotSmall, PlusDotLarge, FoodDotSmall, FoodDotLarge;
+
 
     public Food[] foods;
 
@@ -38,7 +40,8 @@ public class Manager : MonoBehaviour
         t = Random.Range(0, 45);
         FoodImage.sprite = foods[t].sprite;
         desc.text = foods[t].desc;
-
+        Debug.Log(foods[t].desc);
+        checkDot(foods[t].Argent, foods[t].Calories, foods[t].Health);
     }
 
     //private bool IsAlive()
@@ -54,6 +57,55 @@ public class Manager : MonoBehaviour
     //        return true;
     //    return false;
     //}
+
+    private void checkDot(int nbDollar, int nbFood, int nbPlus)
+    {
+        if (nbDollar >= 10 || nbDollar <= -10)
+        {
+            DollarDotLarge.gameObject.SetActive(true);
+            DollarDotSmall.gameObject.SetActive(false);
+        }
+        else if (nbDollar <= 10 && nbDollar > 0 || nbDollar >= -10 && nbDollar < 0)
+        {
+            DollarDotLarge.gameObject.SetActive(false);
+            DollarDotSmall.gameObject.SetActive(true);
+        }
+        else
+        {
+            DollarDotLarge.gameObject.SetActive(false);
+            DollarDotSmall.gameObject.SetActive(false);
+        }
+        if (nbFood >= 10 || nbFood <= -10)
+        {
+            FoodDotLarge.gameObject.SetActive(true);
+            FoodDotSmall.gameObject.SetActive(false);
+        }
+        else if (nbFood <= 10 && nbFood > 0 || nbFood >= -10 && nbFood < 0)
+        {
+            FoodDotLarge.gameObject.SetActive(false);
+            FoodDotSmall.gameObject.SetActive(true);
+        }
+        else
+        {
+            FoodDotLarge.gameObject.SetActive(false);
+            FoodDotSmall.gameObject.SetActive(false);
+        }
+        if (nbPlus >= 10 || nbPlus <= -10)
+        {
+            PlusDotLarge.gameObject.SetActive(true);
+            PlusDotSmall.gameObject.SetActive(false);
+        }
+        else if (nbPlus <= 10 && nbPlus > 0 || nbPlus >= -10 && nbPlus < 0)
+        {
+            PlusDotLarge.gameObject.SetActive(false);
+            PlusDotSmall.gameObject.SetActive(true);
+        }
+        else
+        {
+            PlusDotLarge.gameObject.SetActive(false);
+            PlusDotSmall.gameObject.SetActive(false);
+        }
+    }
 
     private void SwipeLeft()
     { 
@@ -103,6 +155,8 @@ public class Manager : MonoBehaviour
         t = Random.Range(0, 45);
         FoodImage.sprite = foods[t].sprite;
         desc.text = foods[t].desc;
+        checkDot(foods[t].Argent, foods[t].Calories, foods[t].Health);
+        Debug.Log(foods[t].desc);
 
         i++;
         day.text = "Day " + i;
