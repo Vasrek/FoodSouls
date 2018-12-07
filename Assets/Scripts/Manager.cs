@@ -151,6 +151,8 @@ public class Manager : MonoBehaviour
     private void dead()
     {
         desc.text = "You are dead...";
+        RightArrow.gameObject.SetActive(false);
+        LeftArrow.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
